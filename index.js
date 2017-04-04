@@ -11,8 +11,8 @@ class Circle {
         this.x = x;
         this.y = y;
         this.r = Math.random() * 10 ;
-        this._mx = Math.random() * 2;
-        this._my = Math.random() * 2;
+        this._mx = Math.random() ;
+        this._my = Math.random() ;
 
     }
 
@@ -66,7 +66,7 @@ class currentCirle extends Circle {
         ctx.arc(this.x, this.y, this.r, 0, 360);
         ctx.closePath();
         //ctx.fillStyle = 'rgba(0,0,0,' + (parseInt(Math.random() * 100) / 100) + ')'
-        ctx.fillStyle = 'rgba(45, 120, 244, 0.5)'
+        ctx.fillStyle = 'rgba(255, 77, 54, 0.3)'
         ctx.fill();
 
     }
@@ -105,7 +105,7 @@ let init = function (num) {
     }
     draw();
 }
-window.addEventListener('load', init(90));
+window.addEventListener('load', init(60));
 window.onmousemove = function (e) {
     e = e || window.event;
     current_circle.x = e.clientX;
