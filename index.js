@@ -66,7 +66,7 @@ class currentCirle extends Circle {
         ctx.arc(this.x, this.y, this.r, 0, 360);
         ctx.closePath();
         //ctx.fillStyle = 'rgba(0,0,0,' + (parseInt(Math.random() * 100) / 100) + ')'
-        ctx.fillStyle = 'rgba(255, 77, 54, 0.3)'
+        ctx.fillStyle = 'rgba(255, 77, 54, 0.6)'
         ctx.fill();
 
     }
